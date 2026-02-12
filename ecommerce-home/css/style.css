@@ -22,22 +22,29 @@
 
 .second-top {
   font-size: 14px;
-  color: rgb(212, 209, 209);
+  color: #ffffff;
 }
 
 .second-top b {
   color: white;
   font-size: 18px;
 }
+.sr-only {
+  position: absolute;
+  left: -9999px;
+}
+
 @media (max-width: 1024px) {
   .second-top {
-    color: rgb(233, 232, 232);
+    color: #ffffff;
+
     padding: 4px;
   }
   .top {
     gap: 20px;
   }
 }
+
 @media (max-width: 970px) {
   .top {
     flex-direction: column;
@@ -51,20 +58,25 @@
 
 .center {
   width: 100%;
-  height: 41px;
+  min-height: 41px;
   display: flex;
-  color: #6b7280;
+  color: #374151;
+
   align-items: center;
   box-shadow: 1px 1px 10px rgb(225, 223, 223);
   justify-content: center;
   background-color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px 20px;
 }
+
 .into-center {
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .center-one {
@@ -72,30 +84,45 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  flex-wrap: wrap;
+}
+
+.center-one p,
+.center-two p {
+  margin: 0;
+  font-size: 14px;
 }
 
 #sematic b {
   color: red;
 }
+
 .middle {
   padding: 0 10px 0 10px;
   color: rgb(235, 233, 233);
 }
+
 .center-two {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .under {
   width: 100%;
-  height: 78px;
+  min-height: 78px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px 20px;
+}
+.logo {
+  width: 120px;
+  height: auto;
 }
 
 .into-under {
@@ -103,10 +130,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 #input {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 46px;
   border-radius: 8px;
   background-color: #f3f4f6;
@@ -126,7 +156,7 @@
 }
 
 #input input::placeholder {
-  color: #6b7280;
+  color: #4b5563;
 }
 
 #input i {
@@ -136,4 +166,30 @@
 
 .into-under i {
   font-size: 20px;
+}
+
+.into-main {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.first-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.second-img {
+  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }

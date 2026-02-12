@@ -4,12 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amaliyot-1git commit -m "first commit"
-  </title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <title>Amaliyot-1 | Maple Bacon Donuts Recipe</title>
+  <meta name="description" content="Maple Bacon Donuts Recipe">
+  <meta name="author" content="Mirjalol Davronmirzayev">
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      img-src 'self' data:;
+      style-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline';
+      font-src 'self' https://cdnjs.cloudflare.com https: data:;
+      script-src 'self';
+    ">
 </head>
+
+
+
 
 <body>
   <header>
@@ -37,9 +55,12 @@
       <div class="into-center">
         <div class="center-one">
 
-          <p>About Us</p>
-          <p>My account</p>
-          <p>Wishlist</p>
+          <nav>
+            <a href="#">About Us</a>
+            <a href="#">My account</a>
+            <a href="#">Wishlist</a>
+          </nav>
+
 
           <p class="middle">|</p>
           <p id="sematic">We deliver to you every day from <b>7:00 to 23:00</b></p>
@@ -53,28 +74,45 @@
     </div>
     <div class="under">
       <div class="into-under">
-        <img src="./images/Header_img.png" alt="Header_Img">
-        <i class="fa-solid fa-location-dot"></i>
+        <img class="logo" src="./images/Header_img.png" alt="Site logo">
+
+
+
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+
+
         <div class="twice">
           <p>Deliver to</p>
           <b>all</b>
         </div>
         <div id="input">
-          <input type="search" placeholder="Search for products, categories or brands...">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+          <label for="search" class="sr-only">Search</label>
+          <input id="search" type="search" placeholder="Search for products, categories or brands...">
 
-        <i class="fa-regular fa-user"></i>
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+
+        </div>
+        <a href="#" aria-label="User account"><i class="fa-regular fa-user"></i></a>
+
         <div class="twice">
           <p>Sign in</p>
           <b>Account</b>
         </div>
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
+        <a href="#" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+        <a href="#" aria-label="Shopping cart"><i class="fa-solid fa-cart-shopping"></i></a>
+
       </div>
     </div>
   </header>
-  <main></main>
+  <main>
+    <div class="into-main">
+      <img class="first-img" src="./images/Main1.png" alt="Main banner" width="300" height="200">
+      <img class="second-img" src="./images/Main.png" alt="Main promotion banner" width="800" height="400">
+
+
+
+    </div>
+  </main>
   <footer></footer>
 </body>
 
