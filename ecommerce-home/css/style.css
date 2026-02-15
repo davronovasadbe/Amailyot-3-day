@@ -514,3 +514,30 @@ main {
     justify-content: center;
   }
 }
+
+.middles {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-middles {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-middles img {
+  padding: 30px 10px 0 0;
+}
+.it {
+  display: flex;
+  align-items: center;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: center;
+}
